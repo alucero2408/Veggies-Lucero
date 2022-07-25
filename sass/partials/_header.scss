@@ -1,0 +1,19 @@
+header{
+    padding: 20px;
+    font-size: $text-large;
+    color: $terciary-color;
+    background-color: $background-color;
+    background-size:cover;
+    background-image: url(../img/header.png); 
+    font-family: 'Cormorant', serif;
+}
+
+.menu{
+    background-color: $terciary-color;
+}
+
+@media (max-width: 768px) {
+    header{
+        text-align: center;
+    }
+}
