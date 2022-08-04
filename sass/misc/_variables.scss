@@ -4,8 +4,24 @@
     $primary-color: black;
     $secondary-color: #8eb468;
     $terciary-color: #DBDC89;
+    $quaternary-color : #003740;
    
    /*Letras*/
     $text-small: 12px;
     $text-medium: 17px;
     $text-large: 24px;
+
+    /* MAPS */
+    $home_animations: (
+        animation: ease-out,
+        seconds: .2s,
+        scale-hover: 1.1,
+        scale-hover-mobile: 1
+    );
+
+    $recetas_animations: (
+        animation: ease-out,
+        seconds: .4s,
+        scale-hover: 1.15,
+        scale-hover-mobile: 1
+    );

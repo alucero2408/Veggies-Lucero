@@ -1,7 +1,18 @@
 .content__card{
+    @include transitionScale(map-get($home_animations, seconds), map-get($home_animations, animation));
     height: 300px;
     position: relative;
     background-color: $secondary-color;
     border: 1px solid $terciary-color;
     border-radius: 20px;
+}
+
+.content__card:hover {
+    @include transformScale(map-get($home_animations, scale-hover));
+}
+
+@media (max-width: 768px) {
+    .content__card:hover {
+        @include transformScale(map-get($home_animations, scale-hover-mobile));
+    }
 }
