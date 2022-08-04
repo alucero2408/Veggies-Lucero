@@ -1,0 +1,25 @@
+@mixin transformScale($scale) {
+    -webkit-transform:scale($scale);
+    -moz-transform:scale($scale);
+    -o-transform:scale($scale);
+    transform:scale($scale);
+}
+
+@mixin transitionScale($seconds, $animation) {
+    -webkit-transition:  -webkit-transform $seconds $animation;
+    -moz-transition: -moz-transform $seconds $animation;
+    -o-transition: -o-transform $seconds $animation;
+    -ms-transition: -ms-transform $seconds $animation; 
+    transition: transform $seconds $animation; 
+}
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
+@mixin roundImage($radius, $fit: fill) {
+    border-radius: $radius;
+    object-fit: $fit;
+}

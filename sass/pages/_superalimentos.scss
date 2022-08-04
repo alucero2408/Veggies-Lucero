@@ -1,0 +1,10 @@
+.main_image{
+    @include sizes(560px, 315px);
+    @include roundImage(5%);
+}
+
+@media (max-width: 768px) {
+    .main_image{
+        @include sizes(400px, 225px);
+    }
+}

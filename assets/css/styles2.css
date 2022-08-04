@@ -1,5 +1,6 @@
 /*Colores*/
 /*Letras*/
+/* MAPS */
 * {
   margin: 0;
   padding: 0; }
@@ -13,26 +14,6 @@ a:visited {
 
 body {
   background-color: #9fbf89; }
-
-.content__card, .receta__card {
-  -webkit-transition: -webkit-transform .3s ease-out;
-  -moz-transition: -moz-transform .3s ease-out;
-  -o-transition: -o-transform .3s ease-out;
-  -ms-transition: -ms-transform .3s ease-out;
-  transition: transform .3s ease-out; }
-
-.content__card:hover, .receta__card:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1); }
-
-@media (max-width: 768px) {
-  .content__card:hover, .receta__card:hover {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1); } }
 
 header {
   padding: 20px;
@@ -50,24 +31,78 @@ header {
   header {
     text-align: center; } }
 
+.submit_button {
+  background-color: #003740;
+  color: white; }
+
 .content__card {
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  -moz-transition: -moz-transform 0.2s ease-out;
+  -o-transition: -o-transform 0.2s ease-out;
+  -ms-transition: -ms-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
   height: 300px;
   position: relative;
   background-color: #8eb468;
   border: 1px solid #DBDC89;
   border-radius: 20px; }
 
+.content__card:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1); }
+
+@media (max-width: 768px) {
+  .content__card:hover {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); } }
+
+.map {
+  width: 100%; }
+
 .receta__card {
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  -moz-transition: -moz-transform 0.4s ease-out;
+  -o-transition: -o-transform 0.4s ease-out;
+  -ms-transition: -ms-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
   position: relative;
   border-radius: 20px; }
 
 .round__img {
-  border-radius: 20px;
+  border-radius: 5%;
   object-fit: cover;
   width: 100%; }
 
 .receta__text {
   text-align: center; }
+
+.receta__card:hover {
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15); }
+
+@media (max-width: 768px) {
+  .receta__card:hover {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); } }
+
+.main_image {
+  width: 560px;
+  height: 315px;
+  border-radius: 5%;
+  object-fit: fill; }
+
+@media (max-width: 768px) {
+  .main_image {
+    width: 400px;
+    height: 225px; } }
 
 footer {
   background-color: #DBDC89; }
