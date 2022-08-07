@@ -1,10 +1,11 @@
     
     /*Colores*/
-    $background-color: rgb(159, 191, 137);
+    $background-color: #d4d4d4;
     $primary-color: black;
     $secondary-color: #8eb468;
-    $terciary-color: #DBDC89;
+    $terciary-color: #4fa062;
     $quaternary-color : #003740;
+    $title-color: #DBDC89;
    
    /*Letras*/
     $text-small: 12px;
@@ -15,13 +16,13 @@
     $home_animations: (
         animation: ease-out,
         seconds: .2s,
-        scale-hover: 1.1,
+        scale-hover: 1,
         scale-hover-mobile: 1
     );
 
     $recetas_animations: (
         animation: ease-out,
         seconds: .4s,
-        scale-hover: 1.15,
+        scale-hover: 1,
         scale-hover-mobile: 1
     );
