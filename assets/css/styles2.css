@@ -7,33 +7,32 @@
 
 a {
   text-decoration: none;
-  color: black; }
+  color: white; }
 
 a:visited {
-  color: black; }
+  color: white; }
 
 body {
-  background-color: #9fbf89; }
+  background-color: #d4d4d4; }
+
+.nav-link {
+  color: #e4e4e4 !important; }
 
 header {
   padding: 20px;
   font-size: 24px;
   color: #DBDC89;
-  background-color: #9fbf89;
+  background-color: #d4d4d4;
   background-size: cover;
   background-image: url(../img/header.png);
   font-family: 'Cormorant', serif; }
 
 .menu {
-  background-color: #DBDC89; }
+  background-color: #4fa062; }
 
 @media (max-width: 768px) {
   header {
     text-align: center; } }
-
-.submit_button {
-  background-color: #003740;
-  color: white; }
 
 .content__card {
   -webkit-transition: -webkit-transform 0.2s ease-out;
@@ -44,14 +43,14 @@ header {
   height: 300px;
   position: relative;
   background-color: #8eb468;
-  border: 1px solid #DBDC89;
+  border: 1px solid #4fa062;
   border-radius: 20px; }
 
 .content__card:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1); }
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1); }
 
 @media (max-width: 768px) {
   .content__card:hover {
@@ -59,9 +58,6 @@ header {
     -moz-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1); } }
-
-.map {
-  width: 100%; }
 
 .receta__card {
   -webkit-transition: -webkit-transform 0.4s ease-out;
@@ -81,10 +77,10 @@ header {
   text-align: center; }
 
 .receta__card:hover {
-  -webkit-transform: scale(1.15);
-  -moz-transform: scale(1.15);
-  -o-transform: scale(1.15);
-  transform: scale(1.15); }
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1); }
 
 @media (max-width: 768px) {
   .receta__card:hover {
@@ -92,6 +88,12 @@ header {
     -moz-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1); } }
+
+.map {
+  width: 100%; }
+
+.text {
+  font-size: 17px; }
 
 .main_image {
   width: 560px;
@@ -105,7 +107,8 @@ header {
     height: 225px; } }
 
 footer {
-  background-color: #DBDC89; }
+  background-color: #4fa062; }
 
 .footer-text {
-  padding: 15px; }
+  padding: 15px;
+  color: #e4e4e4; }

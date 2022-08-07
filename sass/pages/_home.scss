@@ -15,4 +15,27 @@
     .content__card:hover {
         @include transformScale(map-get($home_animations, scale-hover-mobile));
     }
+}.receta__card{
+    @include transitionScale(map-get($recetas_animations, seconds), map-get($recetas_animations, animation));
+    position: relative;
+    border-radius: 20px;
+}
+
+.round__img{
+    @include roundImage(5%, cover);
+    width: 100%;
+}
+
+.receta__text{
+    text-align: center;
+}
+
+.receta__card:hover {
+    @include transformScale(map-get($recetas_animations, scale-hover));
+}
+
+@media (max-width: 768px) {
+     .receta__card:hover {
+        @include transformScale(map-get($recetas_animations, scale-hover-mobile));
+    }
 }
