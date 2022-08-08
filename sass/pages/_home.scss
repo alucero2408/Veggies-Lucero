@@ -15,10 +15,13 @@
     .content__card:hover {
         @include transformScale(map-get($home_animations, scale-hover-mobile));
     }
-}.receta__card{
+}
+
+.receta__card{
     @include transitionScale(map-get($recetas_animations, seconds), map-get($recetas_animations, animation));
     position: relative;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .round__img{
